@@ -88,12 +88,13 @@ body {
     }
 }
 .header_title{
-    font-size: 3rem;
+    font-size: 2.2rem;
     letter-spacing: 0.1em;
+    line-height: 1.5;
     white-space: nowrap;
 }
 .header_space{
-    margin-left: 100px;
+    margin-left: 40px;
     display: inline-block;
 }
 
@@ -134,7 +135,7 @@ body {
 }
 
 .heading_text{
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     line-height: 1.5;
     font-family: "Murecho", sans-serif;
     color: #3b1600;
@@ -365,14 +366,14 @@ body {
     padding: 0 30px;
     margin: 0 auto;
     width: 100%;
-    max-width: 700px;
+    max-width: 720px;
     margin-top: 60px;
     list-style: none;
 
 }
 .service_list{
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: 1.2fr 2fr;
     gap: 15px;
     margin-bottom: 30px;
     text-align: start;
