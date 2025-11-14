@@ -658,6 +658,8 @@ p[contact_text] {
 }
 
 .header_logo{
+    width: 30vw;
+    height: auto;
     position: absolute;
     top: 50px;
     left: 30px;
@@ -667,6 +669,8 @@ p[contact_text] {
 }
 
 .header_contact{
+    width: 30vw;
+    height: auto;
     position: absolute;
     top: 50px;
     right: 30px;
