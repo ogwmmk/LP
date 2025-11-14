@@ -10,13 +10,14 @@ body {
 *, *::before, *::after {
     box-sizing: border-box;
 }
-@media screen and (max-width: 834px) {
-    /*ウィンドウ幅が~834pxまでの場合に適用_スマートフォン_SP*/
+
+@media screen and (max-width: 768px) {
+    /*ウィンドウ幅が~768pxまでの場合に適用_スマートフォン_SP*/
 
 
 .header_wrap{
     width: 100%;
-    height: 500px;
+    height: 250px;
     background-image: url("../img/honey_parts_1.png");
     background-repeat: repeat-x;
     background-size: auto 100%;
@@ -38,11 +39,11 @@ body {
 }
 
 .header_logo{
-    width: 100px;
+    width: 30vw;
     height: auto;
     object-fit: cover;
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 10px;
     opacity: 0;
     transform: translateY(20px);
@@ -50,11 +51,11 @@ body {
 }
 
 .header_contact{
-    width: 100px;
+    width: 30vw;
     height: auto;
     object-fit: cover;
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 10px;
     opacity: 0;
     transform: translateY(20px);
@@ -70,7 +71,7 @@ body {
 
 .header_content{
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-5deg);
     opacity: 0;
@@ -88,7 +89,7 @@ body {
     }
 }
 .header_title{
-    font-size: 2rem;
+    font-size: 26px;
     letter-spacing: 0.1em;
     line-height: 1.5;
     white-space: nowrap;
@@ -100,7 +101,7 @@ body {
 
 .main_container{
     width: 100%;
-    height: 800px;
+    height: 640px;
     background-image: url("../img/honey_parts_1.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -129,13 +130,13 @@ body {
 }
 
 .heading{
-    margin: 100px 0;
-    padding: 0 30px;
+    padding: 50px 30px;
     text-align: center;
 }
 
 .heading_text{
     font-size: 2rem;
+    font-weight: bold;
     line-height: 1.5;
     font-family: "Murecho", sans-serif;
     color: #3b1600;
@@ -631,7 +632,7 @@ p[contact_text] {
 
 }
 
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 769px) {
 
 .header_wrap{
     width: 100%;
@@ -749,6 +750,7 @@ p[contact_text] {
 
 .heading_text{
     font-size: 3.5rem;
+    font-weight: bold;
     line-height: 1.5;
     font-family: "Murecho", sans-serif;
     color: #3b1600;
@@ -1200,4 +1202,16 @@ p[contact_text] {
     position: relative;
     z-index: 20;
 }
+}
+
+@media screen and (max-width: 550px) {
+    .header_title {
+        font-size: calc((26 / 550)* 100vw);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header_title {
+        font-size: calc((18 / 375)* 100vw);
+    }
 }
