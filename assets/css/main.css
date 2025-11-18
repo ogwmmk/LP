@@ -475,7 +475,7 @@ body {
 .faq_sp-qText{
     width: 70%;
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
@@ -513,10 +513,10 @@ body {
     height: auto;
     padding-left: 0;
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     z-index: 3;
     text-align: center;
     color: #fff;
@@ -1042,7 +1042,7 @@ p[contact_text] {
 .faq_qText{
     width: 70%;
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
@@ -1073,12 +1073,12 @@ p[contact_text] {
     width: 80%;
     height: auto;
     padding-top: 10px;
-    padding-left: 30px;
+    padding-left: 32px;
     position: absolute;
-    top: 10%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     z-index: 3;
     text-align: center;
     color: #fff;
@@ -1223,7 +1223,7 @@ p[contact_text] {
     .faq_sp-qText {
         width: 70%;
         position: absolute;
-        top: 10%;
+        top: 20%;
         left: 50%;
         transform: translateX(-50%);
         font-size: 1.2rem;
@@ -1265,7 +1265,7 @@ p[contact_text] {
         height: auto;
         padding-left: 10px;
         position: absolute;
-        top: 15%;
+        top: 30%;
         left: 50%;
         transform: translateX(-50%);
         font-size: 1rem;
