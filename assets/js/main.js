@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.forEach((el, index) => {
           setTimeout(() => {
             el.classList.add('active'); // 付与
-          }, index * 500);
+          }, index * 300);
         });
 
         spObserver.unobserve(entry.target);
