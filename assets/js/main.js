@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         elements.forEach((el, index) => {
           setTimeout(() => {
-            el.classList.add('active'); // 子に付与
-          }, index * 2000);
+            el.classList.add('active'); // 付与
+          }, index * 500);
         });
 
         spObserver.unobserve(entry.target);
