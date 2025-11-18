@@ -225,6 +225,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
+    transition: opacity 2s ease 0.3s, transform 0.8s ease 0.3s;
 }
 
 .category_spWrap{
@@ -282,12 +283,6 @@ body {
     display: block;
     margin: 0 auto;
 }
-/* .category_spContent.active .category_sp-middleBox {
-    opacity: 1;
-    transform: translate(-50%, -50%) scaleY(1);
-    pointer-events: auto;
-} */
-
 
 .category_sp-middleWrap{
     position: absolute;
@@ -318,22 +313,35 @@ body {
     z-index: 3;
 }
 
-.category_spContent.active .category_spBox {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateY(0);
-    pointer-events: auto;
-}
 
-.category_spContent.active .category_spWrap {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateY(0);
-}
+
+
+@keyframes fadeInHoldOut {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(20px);
+    }
+    30% {
+      opacity: 1;
+      transform: translate(-50%, -50%)  translateY(0);
+    }
+    70% {
+      opacity: 1;
+      transform: translate(-50%, -50%)  translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%)  translateY(-20px);
+    }
+  }
+
 .category_spBox.active,
 .category_spWrap.active,
 .category_sp-middleBox.active,
 .category_sp-middleWrap.active {
     opacity: 1;
     transform: translate(-50%, -50%) translateY(0);
+    animation: fadeInHoldOut 8s ease forwards;
     pointer-events: auto;
 }
 
