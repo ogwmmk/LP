@@ -145,8 +145,7 @@ body {
 
 .heading_contact{
     margin-top: 50px;
-    max-width: 400px;
-    width: 60%;
+    width: 80%;
     height: auto;
     object-fit: cover;
     transition: transform 0.15s ease;
@@ -212,16 +211,17 @@ body {
 .category_spBox{
     position: absolute;
     top: 10%;
-    left: 15%;
+    left: 16%;
     transform: translate(-50%, -50%) translateY(40px);
     transform-origin: top center;
     opacity: 0;
     z-index: 2;
+    font-family: "Murecho", sans-serif;
     pointer-events: none;
     transition: opacity 1s ease 0.3s, transform 2s ease 0.3s;
 }
 .category_spMore{
-    width: 200px;
+    width: 180px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -243,7 +243,7 @@ body {
 
 .category_spTitle {
     color: #3b1600;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     white-space: nowrap;
     z-index: 3;
@@ -251,7 +251,7 @@ body {
 .category_spText{
     padding-top: 10px;
     color: #3b1600;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.2;
     white-space: normal;
@@ -267,16 +267,17 @@ body {
 .category_sp-middleBox{
     position: absolute;
     top: 10%;
-    left: 85%;
+    left: 84%;
     transform: translate(-50%, -50%) translateY(40px); /* 下から上 */
     transform-origin: top center;
     opacity: 0;
     z-index: 2;
+    font-family: "Murecho", sans-serif;
     pointer-events: none;
     transition: opacity 1s ease 0.3s, transform 2s ease 0.3s;
 }
 .category_sp-middleMore{
-    width: 200px;
+    width: 180px;
     height: auto;
     transform: scale(-1, 1);
     display: block;
@@ -297,7 +298,7 @@ body {
 
 .category_sp-middleTitle {
     color: #3b1600;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     white-space: nowrap;
     z-index: 3;
@@ -305,7 +306,7 @@ body {
 .category_sp-middleText{
     padding-top: 10px;
     color: #3b1600;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.2;
     white-space: normal;
@@ -320,17 +321,13 @@ body {
       opacity: 0;
       transform: translate(-50%, -50%) translateY(20px);
     }
-    30% {
-      opacity: 1;
-      transform: translate(-50%, -50%)  translateY(0);
-    }
-    70% {
+    50% {
       opacity: 1;
       transform: translate(-50%, -50%)  translateY(0);
     }
     100% {
-      opacity: 0;
-      transform: translate(-50%, -50%)  translateY(-20px);
+      opacity: 1;
+      transform: translate(-50%, -50%)  translateY(0);
     }
   }
 
@@ -448,6 +445,7 @@ body {
     position: relative;
     margin-top: 50px;
     max-width: 100%;
+    font-family: "Murecho", sans-serif;
     overflow: visible;
     box-sizing: border-box;
 
@@ -464,6 +462,8 @@ body {
     z-index: 2;
     overflow: visible;
     transition: transform 2s ease;
+    display: flex;
+    align-items: center;
 }
 
 .faq_sp-qImg{
@@ -486,7 +486,7 @@ body {
     line-height: 1.5;
 }
 .faq_sp-a{
-    width: 300px;
+    width: 290px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -494,6 +494,8 @@ body {
     transition: transform 2s ease, opacity 3s ease;
     z-index: 1;
     opacity: 0;
+    display: flex;
+    align-items: center;
 }
 .faq_sp-q.active + .faq_sp-a {
     opacity: 1;
@@ -511,7 +513,7 @@ body {
 .faq_sp-aText {
     width: 80%;
     height: auto;
-    padding-left: 0;
+    padding-left: 10px;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -1012,10 +1014,11 @@ p[contact_text] {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
+    gap: 100px;
     position: relative;
     margin-top: 60px;
     overflow: visible;
+    font-family: "Murecho", sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -1030,7 +1033,8 @@ p[contact_text] {
     cursor: pointer;
     z-index: 2;
     transition: transform 2s ease;
-
+    display: flex;
+    align-items: center;
 }
 
 .faq_qImg{
@@ -1062,6 +1066,8 @@ p[contact_text] {
     transform: translateX(-50px); /* 左に隠しておく */
     transition: transform 2s ease, opacity 3s ease;
     z-index: 1;
+    display: flex;
+    align-items: center;
 }
 .faq_aImg {
     width: 100%;
@@ -1073,7 +1079,7 @@ p[contact_text] {
     width: 80%;
     height: auto;
     padding-top: 10px;
-    padding-left: 32px;
+    padding-left: 40px;
     position: absolute;
     top: 25%;
     left: 50%;
@@ -1235,7 +1241,7 @@ p[contact_text] {
     }
 
     .faq_sp-a {
-        width: 250px;
+        width: 240px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -1263,7 +1269,7 @@ p[contact_text] {
     .faq_sp-aText {
         width: 70%;
         height: auto;
-        padding-left: 10px;
+        padding-left: 25px;
         position: absolute;
         top: 30%;
         left: 50%;
